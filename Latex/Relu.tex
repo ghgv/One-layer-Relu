@@ -1,0 +1,76 @@
+\documentclass[journal]{IEEEtai}
+
+\usepackage[colorlinks,urlcolor=blue,linkcolor=blue,citecolor=blue]{hyperref}
+
+\usepackage{color,array}
+\usepackage{pst-3dplot}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{listings}
+\usepackage[justification=centering]{caption}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+
+%% \jvol{XX}
+%% \jnum{XX}
+%% \paper{1234567}
+%% \pubyear{2020}
+%% \publisheddate{xxxx 00, 0000}
+%% \currentdate{xxxx 00, 0000}
+%% \doiinfo{TQE.2020.Doi Number}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\setcounter{page}{1}
+%% \setcounter{secnumdepth}{0}
+
+
+\begin{document}
+
+
+\title{Geometrical derivation of a single neural networl layer with RELU activation } 
+
+
+\author{Germán González, gonzalezv.germanh@javeriana.edu.co }
+
+
+\markboth{ Artificial Intelligence, Universidad Javeriana de Colombia, February 2023}
+{Germán González : Relu Neural Network}
+
+\maketitle
+\captionsetup{font=footnotesize,justification=justified}
+\begin{abstract}
+
+\end{abstract}
+  
+ 
+
+\begin{IEEEkeywords}
+Gabor filters, Modern Hopfield networks, Convolutional Networks, Associative memory.
+\end{IEEEkeywords}
+
+
+\section{Introduction}
+RELU activation in deep neural netwoks have proved to work better than sigmoidal and tangh functions.  Since  the last ones suffer from vanishing gradients. Also, RELU functions as easy to compute. In this article it will be explored a geometrical derivation of a single layer neural network with RELU activation that can be used to aproximate any function. It will also provide a python code that resembles the mathematical formulation so that it can be used quickly in any project.
+
+\section{Previous work}
+In the introductio to neural networks it is always mentioned that a fucntion can be aproximated with a very wide single layer neural network. Examples of that are demonstrated from the works of Kogomorov and also Cybenko. being the lastest one a simpler version of the first one but still requiring to have sound understanding of postgraduate studies in math on teh field of measure theory as the demostration is based on $sigma$-algebra.
+
+
+
+\begin{thebibliography}{34}
+\setcounter{enumiv}{0}
+
+\bibitem{Kolgomorov} Brain model. (2021, 11 25). {\em Brain Model}. [Notebook]. Available at $https://github.com/ghgv/Brain_model$
+
+\bibitem {Cybenko} H. K. Hartline, 'The response of single optic nerve fibers of the vertebrate eye to illumination of the retina', {\em Am J Physiol} vol 121, pp :400–415, 1938
+
+\bibitem{Hyat} D. H. Hubel, T. N. Wiesel,'Receptive fields of single neurones in the cat's striate cortex' {\em J. Physiol},,pp 574-591,1959
+
+
+\end{thebibliography}
+\
+\end{document}
